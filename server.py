@@ -19,11 +19,11 @@ def newAnimal():
 	try:
 		cursor.execute('INSERT INTO pets (name, species, age) VALUES (?, ?, ?)', (name, species, age))
 		connection.commit()
-		message = 'successfully inserted'
+		message = 'Species data successfully inserted into database'
 	except Exception as err:
 		print(err)
 		connection.rollback()
-		message = 'an error occured'
+		message = 'Error occured while inserting data'
 	finally:
 		connection.close()
 		return message

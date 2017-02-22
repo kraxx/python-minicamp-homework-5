@@ -2,6 +2,7 @@
   <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
 </head>
 
+<main>
 <h1 class="header">My Pets</h1>
 
 <form id="new-pet-form" action="/new-pet" method="POST" onsubmit="return validateForm()">
@@ -18,13 +19,19 @@
 </form>
 
 <a href="/pets">Pets List</a>
+<br>
+<button id='colorChange'>Change Color
+</button>
+<br>
+<button id='hide'>Hide Everything!
+</button>
 
 <p>Apply to our full-time and part-time courses to take accelerate your education.</p>
 <p>Our courses teach you the skills you need to take the next step in becoming a software engineer.</p>
 <p>We provide job support during and after the course to help you continue to develop your skills and find the right opportunities.</p>
 Learn more <a href="https://www.lambdaschool.com">here.</a>
 
+</main>
 
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 <script src="/static/scripts/home.js"></script>
-
-
